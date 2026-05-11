@@ -36,11 +36,12 @@ jobs:
         env:
           FIREBASE_CONFIG_JSON: ${{ secrets.FIREBASE_CONFIG_JSON }}
         run: |
-          if [ -n "$FIREBASE_CONFIG_JSON" ]; then
-            printf '%s' "$FIREBASE_CONFIG_JSON" > firebase-config.default.json
-          else
-            rm -f firebase-config.default.json
+          if [ -z "$FIREBASE_CONFIG_JSON" ]; then
+            echo "::error::FIREBASE_CONFIG_JSON is required for mobile sign-in and sync."
+            exit 1
           fi
+          printf '%s' "$FIREBASE_CONFIG_JSON" > firebase-config.default.json
+          python3 -c "import json, pathlib, sys; data=json.loads(pathlib.Path('firebase-config.default.json').read_text()); missing=[k for k in ('apiKey','projectId','appId') if not data.get(k)]; sys.exit('FIREBASE_CONFIG_JSON is missing: '+', '.join(missing) if missing else 0)"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
