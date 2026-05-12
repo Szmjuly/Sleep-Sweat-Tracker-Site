@@ -93,9 +93,10 @@ h2 {
 .app-header p, .summary, .section-head span, small { color: var(--muted); }
 
 .date-picker {
-    flex: 0 1 210px;
+    flex: 0 0 170px;
+    width: 170px;
     min-width: 0;
-    max-width: 100%;
+    max-width: 170px;
 }
 
 label span, .eyebrow {
@@ -379,6 +380,7 @@ details {
     .app-header { display: block; }
     .date-picker {
         width: 100%;
+        max-width: 100%;
         margin-top: 18px;
     }
     .today-grid, .field-row.two, .field-row.three, .symptoms { grid-template-columns: 1fr; }
