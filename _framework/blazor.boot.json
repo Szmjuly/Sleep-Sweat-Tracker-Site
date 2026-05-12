@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "SleepSweatTracker.Mobile",
   "resources": {
-    "hash": "sha256-7fnOVYjohNG8kXqD6zt0qY3QpKiD8uiyPg0+GEsfKWY=",
+    "hash": "sha256-mBZHKFZ6MzHGAryHO1Sj1pacMKeeO9OAjBnSjVOAE2U=",
     "jsModuleNative": {
       "dotnet.native.8.0.23.vmqg6a9kn0.js": "sha256-NljIbpK/1KCj0+knpX8U77Rbl5kTtfFIuFjK7AuczEw="
     },
@@ -31,8 +31,8 @@
       "Microsoft.Extensions.Primitives.wasm": "sha256-6187ynEahDlSLMBvD4vAmiLpZ3clRb5xu6rM7O8AxNo=",
       "Microsoft.JSInterop.wasm": "sha256-CcG3Cqc7l5p89cI8/gSfxXuSGcAj07P+acBDlwMuZc8=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-ecJuh6yJF0I8XGdiayW1+2/ypH2yKMzftLehBZBnbXI=",
-      "SleepSweatTracker.Core.wasm": "sha256-xU+e5Br4mjR1JULfB7yVp18cJLZ43ucGpBqpmgsztGY=",
-      "SleepSweatTracker.Mobile.wasm": "sha256-xkBDtSFOtibentUF+32vlidwbTG7PZT9VsIFGLsXgqg=",
+      "SleepSweatTracker.Core.wasm": "sha256-FjKq45CP+supwhCjjsxV9+JXZphBKdmmilPaNL9qnzc=",
+      "SleepSweatTracker.Mobile.wasm": "sha256-CtoyDzv/4PvPeZEfJXQbfgT21gXIethKwoeePW/tHh8=",
       "System.Collections.Concurrent.wasm": "sha256-ssPDcOnEHpRvbTxEKPUoIH3Um8vFQFkxX1Fd08dcXsc=",
       "System.Collections.NonGeneric.wasm": "sha256-NRIGL0Z8RBd2ZrRY1xoGwu7RLzh2VFQMfe6J0Pku9Pc=",
       "System.Collections.Specialized.wasm": "sha256-AN0EPcmh329nLuCvmYbix6tx4BS4lOVHY3ZmdmVQwv4=",
@@ -42,7 +42,7 @@
       "System.ComponentModel.wasm": "sha256-tM7dDAYzsEsAddEMkJHtuHt+UVA2T7x2m4JOM6YqL0M=",
       "System.Console.wasm": "sha256-h6SJmPGfFMFj6YPpqdUHUiapSGiSaEOdiGecVx2FM3k=",
       "System.Diagnostics.DiagnosticSource.wasm": "sha256-DkL5CTBPgw4JIP3SA0I8nyKfXRZocGA6Lt/RyadQXKE=",
-      "System.Linq.wasm": "sha256-/cqhL/SXbeo90l1IFB2rQl5FYjCrgntQS2G7JjGVNAM=",
+      "System.Linq.wasm": "sha256-hjPvrmARsbT8xL/wQ+4GruLuAHmvaPkhjwb3EdCAgT4=",
       "System.Memory.wasm": "sha256-yHW4O1ESCcR8NdZNz8SBbQLmNzx3ClbKO2/1BR5LoLI=",
       "System.Net.Http.wasm": "sha256-yXblaKVCnkmaKn28H54+/oXGo7ELFfZO190rKB+AsjQ=",
       "System.Net.Primitives.wasm": "sha256-hVk56QYNdPGfW/epv0EvBp4f5Uo18d63kaykia6e13E=",

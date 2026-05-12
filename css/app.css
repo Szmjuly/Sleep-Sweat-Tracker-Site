@@ -158,6 +158,7 @@ label span, .eyebrow {
 }
 
 .field-row.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.field-row.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
 label, details {
     display: block;
@@ -203,6 +204,53 @@ input[type="range"] {
 
 .check-row { margin-bottom: 14px; }
 
+.subsection {
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.row-list {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.row-card {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface-soft);
+    padding: 12px;
+}
+
+.row-card .chip-grid,
+.row-card label:last-child {
+    margin-bottom: 10px;
+}
+
+.symptoms {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.import-panel {
+    display: grid;
+    gap: 5px;
+    margin-bottom: 14px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface-soft);
+    padding: 12px;
+}
+
+.import-panel strong {
+    font-size: 14px;
+}
+
+.import-panel span {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.35;
+}
+
 .chip-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -214,6 +262,11 @@ summary {
     margin-bottom: 12px;
     cursor: pointer;
     font-weight: 800;
+}
+
+details {
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
 }
 
 .metric-row {
@@ -328,7 +381,7 @@ summary {
         width: 100%;
         margin-top: 18px;
     }
-    .today-grid, .field-row.two { grid-template-columns: 1fr; }
+    .today-grid, .field-row.two, .field-row.three, .symptoms { grid-template-columns: 1fr; }
     .panel { padding: 14px; }
     .chip-grid { grid-template-columns: 1fr; }
     .section-head { align-items: stretch; }
