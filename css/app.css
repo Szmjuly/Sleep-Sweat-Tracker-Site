@@ -379,9 +379,12 @@ details {
     .mobile-shell { padding-inline: 12px; }
     .app-header { display: block; }
     .date-picker {
-        width: calc(100% - 24px);
-        max-width: 100%;
-        margin: 18px auto 14px;
+        width: 190px;
+        max-width: calc(100% - 24px);
+        margin: 18px 0 14px;
+    }
+    .date-picker input {
+        min-width: 0;
     }
     .today-grid, .field-row.two, .field-row.three, .symptoms { grid-template-columns: 1fr; }
     .panel { padding: 14px; }
