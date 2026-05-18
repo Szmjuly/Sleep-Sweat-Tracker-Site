@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "SleepSweatTracker.Mobile",
   "resources": {
-    "hash": "sha256-c1DLUyicFwQ4FgUj/D+8+jH2gf+5hQbww/ywJ6sjldM=",
+    "hash": "sha256-tEEPPr4Ni0kug10Cr7J5bLzBpmtBHobQ4mDA9+/4U0A=",
     "jsModuleNative": {
       "dotnet.native.8.0.23.vmqg6a9kn0.js": "sha256-NljIbpK/1KCj0+knpX8U77Rbl5kTtfFIuFjK7AuczEw="
     },
@@ -32,7 +32,7 @@
       "Microsoft.JSInterop.wasm": "sha256-CcG3Cqc7l5p89cI8/gSfxXuSGcAj07P+acBDlwMuZc8=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-ecJuh6yJF0I8XGdiayW1+2/ypH2yKMzftLehBZBnbXI=",
       "SleepSweatTracker.Core.wasm": "sha256-8z/yQF7Ddt+GLj2d4kuMJ6LnzmIzlu4vho6hzVUiwto=",
-      "SleepSweatTracker.Mobile.wasm": "sha256-+kdMhMfU57GJln8NpKi9M4uIcvbjoYeov2viz/pbbEA=",
+      "SleepSweatTracker.Mobile.wasm": "sha256-UWhHP0r6ckonqk3Bs1Rj9FcpRKrQwsZZv4vWKHg3RrM=",
       "System.Collections.Concurrent.wasm": "sha256-lLcwwRwsL+dh4+PiXIu9GZROA0g9DtxmEQp1Ki9jWeg=",
       "System.Collections.NonGeneric.wasm": "sha256-NRIGL0Z8RBd2ZrRY1xoGwu7RLzh2VFQMfe6J0Pku9Pc=",
       "System.Collections.Specialized.wasm": "sha256-CMOhUekeQ7sr52BDdWBLWD4znNGyNGINiaEkSrEzJi0=",
