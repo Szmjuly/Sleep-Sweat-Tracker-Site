@@ -8,9 +8,6 @@
     --line: #dce4de;
     --accent: #0f766e;
     --accent-strong: #115e59;
-    --blue: #2563eb;
-    --violet: #7c3aed;
-    --amber: #b45309;
     --danger: #b42318;
     --shadow: 0 16px 42px rgba(25, 38, 32, 0.1);
 }
@@ -96,9 +93,10 @@ h2 {
 .app-header p, .summary, .section-head span, small { color: var(--muted); }
 
 .date-picker {
-    flex: 0 1 210px;
+    flex: 0 0 170px;
+    width: 170px;
     min-width: 0;
-    max-width: 100%;
+    max-width: 170px;
 }
 
 label span, .eyebrow {
@@ -139,6 +137,12 @@ label span, .eyebrow {
     gap: 16px;
 }
 
+.shortcut-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
 .panel {
     border: 1px solid var(--line);
     border-radius: 8px;
@@ -161,6 +165,7 @@ label span, .eyebrow {
 }
 
 .field-row.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.field-row.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
 label, details {
     display: block;
@@ -206,6 +211,59 @@ input[type="range"] {
 
 .check-row { margin-bottom: 14px; }
 
+.subsection {
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.row-list {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.row-card {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface-soft);
+    padding: 12px;
+}
+
+.row-title {
+    margin: 0 0 10px;
+    color: var(--accent-strong);
+    font-weight: 800;
+}
+
+.row-card .chip-grid,
+.row-card label:last-child {
+    margin-bottom: 10px;
+}
+
+.symptoms {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.import-panel {
+    display: grid;
+    gap: 5px;
+    margin-bottom: 14px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface-soft);
+    padding: 12px;
+}
+
+.import-panel strong {
+    font-size: 14px;
+}
+
+.import-panel span {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.35;
+}
+
 .chip-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -217,6 +275,11 @@ summary {
     margin-bottom: 12px;
     cursor: pointer;
     font-weight: 800;
+}
+
+details {
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
 }
 
 .metric-row {
@@ -260,6 +323,14 @@ summary {
     color: var(--muted);
 }
 
+.table-list.compact article {
+    background: var(--surface-soft);
+}
+
+.inline-check {
+    align-self: end;
+}
+
 .summary-box { min-height: 58vh; }
 
 .account-row {
@@ -280,264 +351,6 @@ summary {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 14px;
-}
-
-.app-header-v2 {
-    align-items: center;
-    padding-bottom: 12px;
-}
-
-.app-header-v2 h1 {
-    font-size: clamp(30px, 4vw, 40px);
-}
-
-.tab-strip-v2 button {
-    min-width: 96px;
-}
-
-.v2-dashboard {
-    display: grid;
-    gap: 14px;
-}
-
-.summary-band {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
-}
-
-.summary-band div {
-    min-width: 0;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    background: var(--surface);
-    box-shadow: var(--shadow);
-    padding: 14px;
-}
-
-.summary-band span,
-.summary-band small {
-    display: block;
-    color: var(--muted);
-    font-size: 12px;
-    font-weight: 800;
-}
-
-.summary-band strong {
-    display: block;
-    margin: 5px 0;
-    color: var(--ink);
-    font-size: 20px;
-    line-height: 1.1;
-}
-
-.toast-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    border: 1px solid #bfdbfe;
-    border-radius: 8px;
-    background: #eff6ff;
-    color: #1e3a8a;
-    padding: 10px 12px;
-    font-weight: 800;
-}
-
-.toast-row button {
-    min-height: 34px;
-    border-color: #93c5fd;
-    color: #1d4ed8;
-}
-
-.quick-panel .section-head {
-    margin-bottom: 12px;
-}
-
-.shortcut-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
-}
-
-.shortcut-button {
-    display: block;
-    min-height: 82px;
-    padding: 12px;
-    text-align: left;
-}
-
-.shortcut-button strong,
-.shortcut-button span {
-    display: block;
-}
-
-.shortcut-button strong {
-    margin-bottom: 5px;
-    font-size: 15px;
-}
-
-.shortcut-button span {
-    color: var(--muted);
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.compact-list article {
-    padding: 10px 12px;
-}
-
-.log-panel {
-    max-width: 920px;
-    margin-inline: auto;
-}
-
-.segmented-control {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 6px;
-    margin-bottom: 16px;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    background: var(--surface-soft);
-    padding: 5px;
-}
-
-.segmented-control button {
-    min-height: 38px;
-    border-color: transparent;
-    background: transparent;
-}
-
-.segmented-control button.active {
-    border-color: var(--line);
-    background: var(--surface);
-    color: var(--accent-strong);
-    box-shadow: 0 8px 18px rgba(25, 38, 32, 0.08);
-}
-
-.v2-form-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-}
-
-.v2-form-grid .wide {
-    grid-column: 1 / -1;
-}
-
-.dense-chips {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.settings-panel {
-    display: grid;
-    gap: 18px;
-}
-
-.settings-section {
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 18px;
-}
-
-.settings-section:last-child {
-    border-bottom: 0;
-    padding-bottom: 0;
-}
-
-.toggle-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 0;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    background: #fbfcfb;
-    padding: 12px;
-}
-
-.toggle-row input {
-    width: 22px;
-    height: 22px;
-    accent-color: var(--accent);
-}
-
-.toggle-row strong,
-.toggle-row small {
-    display: block;
-}
-
-.toggle-row small {
-    margin-top: 2px;
-    color: var(--muted);
-}
-
-.shortcut-editor {
-    display: grid;
-    gap: 8px;
-}
-
-.shortcut-editor article {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    background: #fbfcfb;
-    padding: 10px;
-}
-
-.shortcut-editor label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0;
-}
-
-.shortcut-editor label > span,
-.shortcut-editor strong,
-.shortcut-editor small {
-    display: block;
-}
-
-.shortcut-editor small {
-    color: var(--muted);
-}
-
-.reorder-buttons {
-    display: flex;
-    gap: 6px;
-}
-
-.reorder-buttons button {
-    min-height: 34px;
-    padding-inline: 10px;
-    font-size: 12px;
-}
-
-.modal-backdrop {
-    position: fixed;
-    inset: 0;
-    z-index: 30;
-    display: grid;
-    align-items: end;
-    background: rgba(15, 23, 42, 0.42);
-    padding: 12px;
-}
-
-.prompt-sheet {
-    width: min(100%, 560px);
-    margin: 0 auto;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    background: var(--surface);
-    box-shadow: 0 24px 72px rgba(15, 23, 42, 0.24);
-    padding: 16px;
-}
-
-.full-width {
-    width: 100%;
 }
 
 #blazor-error-ui {
@@ -586,10 +399,14 @@ summary {
     .mobile-shell { padding-inline: 12px; }
     .app-header { display: block; }
     .date-picker {
-        width: 100%;
-        margin-top: 18px;
+        width: 190px;
+        max-width: calc(100% - 24px);
+        margin: 18px 0 14px;
     }
-    .today-grid, .field-row.two { grid-template-columns: 1fr; }
+    .date-picker input {
+        min-width: 0;
+    }
+    .today-grid, .shortcut-grid, .field-row.two, .field-row.three, .symptoms { grid-template-columns: 1fr; }
     .panel { padding: 14px; }
     .chip-grid { grid-template-columns: 1fr; }
     .section-head { align-items: stretch; }
@@ -597,26 +414,5 @@ summary {
     .account-row {
         align-items: stretch;
         flex-direction: column;
-    }
-    .summary-band,
-    .shortcut-grid,
-    .v2-form-grid,
-    .dense-chips {
-        grid-template-columns: 1fr;
-    }
-    .summary-band div {
-        padding: 12px;
-    }
-    .shortcut-button {
-        min-height: 68px;
-    }
-    .shortcut-editor article {
-        grid-template-columns: 1fr;
-    }
-    .reorder-buttons button {
-        flex: 1;
-    }
-    .modal-backdrop {
-        padding: 8px;
     }
 }
