@@ -143,6 +143,133 @@ label span, .eyebrow {
     gap: 16px;
 }
 
+.shortcut-page {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(320px, 0.7fr);
+    gap: 16px;
+}
+
+.shortcut-hero {
+    grid-column: 1 / -1;
+}
+
+.shortcut-button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.shortcut-card {
+    display: grid;
+    gap: 8px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface-soft);
+    padding: 10px;
+}
+
+.shortcut-main {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    grid-template-areas:
+        "icon title"
+        "icon summary";
+    align-items: center;
+    min-height: 72px;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+.shortcut-main strong {
+    grid-area: title;
+    overflow-wrap: anywhere;
+}
+
+.shortcut-main small {
+    grid-area: summary;
+}
+
+.shortcut-icon {
+    grid-area: icon;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.shortcut-green .shortcut-icon { background: #15803d; }
+.shortcut-blue .shortcut-icon { background: #2563eb; }
+.shortcut-amber .shortcut-icon { background: #b45309; }
+.shortcut-rose .shortcut-icon { background: #be123c; }
+
+.icon-action {
+    min-height: 34px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.undo-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 14px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #f7fbff;
+    padding: 10px;
+}
+
+.undo-bar span {
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.empty-state {
+    border: 1px dashed var(--line);
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.empty-state span {
+    display: block;
+    margin-top: 4px;
+    color: var(--muted);
+}
+
+.save-log-shortcut {
+    margin-top: 16px;
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+}
+
+.shortcut-builder .table-list article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    display: grid;
+    place-items: center;
+    background: rgba(15, 23, 42, 0.28);
+    padding: 16px;
+}
+
+.prompt-panel {
+    width: min(100%, 420px);
+}
+
 .panel {
     border: 1px solid var(--line);
     border-radius: 8px;
@@ -406,7 +533,8 @@ details {
     .date-picker input {
         min-width: 0;
     }
-    .today-grid, .shortcut-grid, .field-row.two, .field-row.three, .symptoms { grid-template-columns: 1fr; }
+    .today-grid, .shortcut-grid, .shortcut-page, .field-row.two, .field-row.three, .symptoms { grid-template-columns: 1fr; }
+    .shortcut-hero { grid-column: auto; }
     .panel { padding: 14px; }
     .chip-grid { grid-template-columns: 1fr; }
     .section-head { align-items: stretch; }
