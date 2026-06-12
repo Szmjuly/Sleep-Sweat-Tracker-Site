@@ -56,27 +56,39 @@ button.danger {
 
 .app-header {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     gap: 18px;
-    padding: 14px 0 18px;
+    padding: 14px 0 16px;
 }
 
 .app-header > div {
     min-width: 0;
 }
 
-.brand-mark {
-    display: grid;
-    place-items: center;
-    width: 48px;
-    height: 48px;
-    margin-bottom: 14px;
-    border-radius: 8px;
-    background: var(--accent);
-    color: white;
-    font-size: 15px;
-    font-weight: 800;
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo {
+    flex: 0 0 auto;
+    display: block;
+    width: 46px;
+    height: 46px;
+}
+
+.brand-logo svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 11px;
+    box-shadow: 0 10px 22px -10px rgba(22, 24, 44, 0.45);
+}
+
+.brand-text {
+    min-width: 0;
 }
 
 h1, h2, p { margin: 0; }
@@ -84,8 +96,10 @@ h1, h2, p { margin: 0; }
 h1:focus { outline: none; }
 
 h1 {
-    font-size: clamp(28px, 5vw, 44px);
-    line-height: 1;
+    font-size: clamp(22px, 4.5vw, 32px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.02em;
 }
 
 h2 {
@@ -164,11 +178,11 @@ label span, .eyebrow {
 
 .shortcut-card {
     display: grid;
-    gap: 8px;
+    gap: 0;
     border: 1px solid var(--line);
-    border-radius: 8px;
-    background: var(--surface-soft);
-    padding: 10px;
+    border-radius: 12px;
+    background: var(--surface);
+    padding: 4px;
 }
 
 .shortcut-main {
@@ -180,7 +194,10 @@ label span, .eyebrow {
     align-items: center;
     min-height: 72px;
     width: 100%;
-    padding: 10px;
+    border: 0;
+    border-radius: 9px;
+    background: transparent;
+    padding: 8px;
     text-align: left;
 }
 
@@ -212,7 +229,11 @@ label span, .eyebrow {
 .shortcut-rose .shortcut-icon { background: #be123c; }
 
 .icon-action {
-    min-height: 34px;
+    min-height: 30px;
+    border: 0;
+    background: transparent;
+    justify-self: end;
+    padding: 0 10px 4px;
     color: var(--muted);
     font-size: 12px;
 }
@@ -492,10 +513,6 @@ details {
     padding-bottom: 12px;
 }
 
-.app-header-v2 h1 {
-    font-size: clamp(30px, 4vw, 40px);
-}
-
 .tab-strip-v2 button {
     min-width: 96px;
 }
@@ -634,53 +651,24 @@ details {
     color: var(--muted);
 }
 
-.ui-choice-grid {
-    display: grid;
-    gap: 10px;
+.ui-select {
+    margin-bottom: 10px;
 }
 
-.ui-choice {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
+.ui-select-hint {
     margin: 0;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    background: #fbfcfb;
-    padding: 12px;
-    cursor: pointer;
-}
-
-.ui-choice input {
-    flex: 0 0 auto;
-    width: 20px;
-    height: 20px;
-    margin-top: 2px;
-    accent-color: var(--accent);
-}
-
-.ui-choice > span {
-    display: block;
-    margin: 0;
-    color: var(--ink);
-    font-size: 15px;
-    font-weight: 400;
-    text-transform: none;
-}
-
-.ui-choice strong,
-.ui-choice small {
-    display: block;
-}
-
-.ui-choice small {
-    margin-top: 2px;
     color: var(--muted);
+    font-size: 13px;
+    line-height: 1.4;
 }
 
-.ui-choice.selected {
-    border-color: var(--accent);
-    background: var(--surface-soft);
+.field-hint {
+    display: block;
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 12.5px;
+    font-weight: 500;
+    line-height: 1.35;
 }
 
 /* ============================================================
@@ -755,7 +743,6 @@ details {
 
 .ui-v3 input[type="range"],
 .ui-v3 .toggle-row input,
-.ui-v3 .ui-choice input,
 .ui-v3 .check-row input,
 .ui-v3 .chip-grid input {
     accent-color: var(--accent);
@@ -776,13 +763,8 @@ details {
     letter-spacing: -0.02em;
 }
 
-.ui-v3 .brand-mark {
-    width: 44px;
-    height: 44px;
-    margin-bottom: 10px;
-    border-radius: 14px;
-    background: linear-gradient(135deg, #6366f1, #14b8a6);
-    box-shadow: 0 8px 20px -8px rgba(79, 70, 229, 0.6);
+.ui-v3 .brand-logo svg {
+    box-shadow: 0 10px 24px -10px rgba(79, 70, 229, 0.55);
 }
 
 .ui-v3 .date-picker input {
@@ -882,7 +864,18 @@ details {
     box-shadow: var(--shadow);
 }
 
-.ui-v3 .shortcut-main { border-radius: 14px; }
+.ui-v3 .shortcut-main {
+    border: 0;
+    border-radius: 13px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.ui-v3 .icon-action {
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+}
 
 .ui-v3 .shortcut-icon {
     border-radius: 12px;
@@ -896,16 +889,9 @@ details {
 
 .ui-v3 .check-row,
 .ui-v3 .chip-grid label,
-.ui-v3 .toggle-row,
-.ui-v3 .ui-choice {
+.ui-v3 .toggle-row {
     border-radius: 14px;
     background: var(--surface);
-}
-
-.ui-v3 .ui-choice.selected {
-    border-color: var(--accent);
-    background: var(--accent-soft);
-    box-shadow: 0 0 0 1px var(--accent) inset;
 }
 
 .ui-v3 .segmented-control {
@@ -1002,9 +988,9 @@ details {
     .mobile-shell { padding-inline: 12px; }
     .app-header { display: block; }
     .date-picker {
-        width: 190px;
-        max-width: calc(100% - 24px);
-        margin: 18px 0 14px;
+        width: 100%;
+        max-width: none;
+        margin: 14px 0 10px;
     }
     .date-picker input {
         min-width: 0;
