@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "SleepSweatTracker.Mobile",
   "resources": {
-    "hash": "sha256-tEEPPr4Ni0kug10Cr7J5bLzBpmtBHobQ4mDA9+/4U0A=",
+    "hash": "sha256-wVgwSQJNTY5gSCRazBfFBS4byZVVCp5m5wM0vd9JF2k=",
     "jsModuleNative": {
       "dotnet.native.8.0.23.vmqg6a9kn0.js": "sha256-NljIbpK/1KCj0+knpX8U77Rbl5kTtfFIuFjK7AuczEw="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "Microsoft.AspNetCore.Components.wasm": "sha256-/CxP38YM/sLNwhgPdbdZphBhaR6ABpVNHQAl8jJlJAw=",
+      "Microsoft.AspNetCore.Components.wasm": "sha256-P5rauf5Xbz9Ol+0HDmTj1OVvgINqwh7v8B94h+jaI6A=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-opxQs0G+QBrumpkRuTdBaosorOOShEb1ALrhKEago60=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-F0i6VBOoCCiDt9ZZD2aAFy3AghfWLxyE5NVQ67IJPKE=",
       "Microsoft.Extensions.Configuration.Abstractions.wasm": "sha256-87sn2TYqgdZ95sXmavjKEzoEfMgHnYQ9LOvnMX+aZcI=",
@@ -32,7 +32,7 @@
       "Microsoft.JSInterop.wasm": "sha256-CcG3Cqc7l5p89cI8/gSfxXuSGcAj07P+acBDlwMuZc8=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-ecJuh6yJF0I8XGdiayW1+2/ypH2yKMzftLehBZBnbXI=",
       "SleepSweatTracker.Core.wasm": "sha256-8z/yQF7Ddt+GLj2d4kuMJ6LnzmIzlu4vho6hzVUiwto=",
-      "SleepSweatTracker.Mobile.wasm": "sha256-UWhHP0r6ckonqk3Bs1Rj9FcpRKrQwsZZv4vWKHg3RrM=",
+      "SleepSweatTracker.Mobile.wasm": "sha256-NbkmAzunVLmqhF/AW9fxCsoG7SypUi6RbZKcmDVo09c=",
       "System.Collections.Concurrent.wasm": "sha256-lLcwwRwsL+dh4+PiXIu9GZROA0g9DtxmEQp1Ki9jWeg=",
       "System.Collections.NonGeneric.wasm": "sha256-NRIGL0Z8RBd2ZrRY1xoGwu7RLzh2VFQMfe6J0Pku9Pc=",
       "System.Collections.Specialized.wasm": "sha256-CMOhUekeQ7sr52BDdWBLWD4znNGyNGINiaEkSrEzJi0=",
