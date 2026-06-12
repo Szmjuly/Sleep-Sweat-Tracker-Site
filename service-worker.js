@@ -31,6 +31,9 @@ async function onInstall(event) {
 async function onActivate(event) {
     console.info('Service worker: Activate');
 
+    // Take control of all open clients immediately so they get the new assets.
+    await self.clients.claim();
+
     // Delete unused caches
     const cacheKeys = await caches.keys();
     await Promise.all(cacheKeys
@@ -54,4 +57,4 @@ async function onFetch(event) {
 
     return cachedResponse || fetch(event.request);
 }
-/* Manifest version: 7OQgyUjH-1781297995 */
+/* Manifest version: 7OQgyUjH-1781299444 */
