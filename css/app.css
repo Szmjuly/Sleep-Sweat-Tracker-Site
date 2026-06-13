@@ -117,6 +117,23 @@ h2 {
     max-width: 170px;
 }
 
+/* iOS Safari sizes native date controls to their intrinsic width and centers
+   the value unless the native appearance is removed. */
+.date-picker input {
+    -webkit-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    text-align: left;
+}
+
+.date-picker input::-webkit-date-and-time-value {
+    text-align: left;
+    margin: 0;
+}
+
 label span, .eyebrow {
     display: block;
     margin-bottom: 7px;
